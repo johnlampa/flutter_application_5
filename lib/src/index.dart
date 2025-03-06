@@ -291,6 +291,7 @@ class CustomCard extends StatelessWidget {
                 
                 ),
                 Stack(
+                  
                   children: [
                     Container(
                       width: 600,
