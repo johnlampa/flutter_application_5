@@ -5,7 +5,7 @@ class CustomCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
 
       body: Container(
@@ -29,7 +29,7 @@ class CustomCard extends StatelessWidget {
             child: LayoutBuilder(
                 builder: (context, constraints) {
                   // Conditionally render WebCard based on screen width (or any condition)
-                  if (constraints.maxWidth < 1200) {
+                  if (size.width < 1200) {
                     return Expanded(
                       child: Container(
                         padding: EdgeInsets.all(40),
